@@ -19,9 +19,7 @@ import java.util.Iterator;
             /**
              * Constructor amb tots els atributs de matricula
              * @param id Nombre enter únic
-             * @param nom Cadena de carácters
-             * @param cognoms Cadena de carácters
-             * @param dni Cadena de 8 nombres i una lletra
+             * @param estudiant Estudiant registrat en la classe Estudiant
              * @param curs Curs al que vas a matricularte, un enter
              * @param assignatures Assignaturas registrades en el ArrayList
              */
