@@ -6,29 +6,33 @@ package principal;
 import java.util.Collection;
 import java.util.ArrayList;
 import java.util.Iterator;
- 
+
     public class Matricula {
- 
+        public static final float costCredits= 15;
         public long id = 0;
-        private String nom = "";
-        private String cognoms = "";
-        private String dni = "";
         private int curs = 0;
         private Collection assignatures;
- 
+        private Estudiant estudiant;
+        
         public Matricula(){}
- 
-            public Matricula(long id, String nom, String cognoms, String dni, int curs, Collection assignatures) {
+
+            /**
+             * Constructor amb tots els atributs de matricula
+             * @param id Nombre enter únic
+             * @param nom Cadena de carácters
+             * @param cognoms Cadena de carácters
+             * @param dni Cadena de 8 nombres i una lletra
+             * @param curs Curs al que vas a matricularte, un enter
+             * @param assignatures Assignaturas registrades en el ArrayList
+             */
+            public Matricula(long id, Estudiant estudiant, int curs, Collection assignatures) {
             this.id = id;
-            this.nom = nom;
-            this.cognoms = cognoms;
-            this.dni = dni;
             this.curs = curs;
             this.assignatures = assignatures;
     }
- 
+    
     public float costMatricula(){
- 
+        
         float cost = 0;
         int credits = 0;
  
@@ -37,7 +41,7 @@ import java.util.Iterator;
         credits = credits + element.credits;
         }
  
-        cost = credits * 15;
+        cost = credits * costCredits;
         return cost;
     }
 }
