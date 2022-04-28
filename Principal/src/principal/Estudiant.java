@@ -5,6 +5,30 @@ package principal;
  */
 public class Estudiant {
         private String nom = "";
+
+    public String getNom() {
+        return nom;
+    }
+
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+
+    public String getCognoms() {
+        return cognoms;
+    }
+
+    public void setCognoms(String cognoms) {
+        this.cognoms = cognoms;
+    }
+
+    public String getDni() {
+        return dni;
+    }
+
+    public void setDni(String dni) {
+        this.dni = dni;
+    }
         private String cognoms = "";
         private String dni = "";
         /**
