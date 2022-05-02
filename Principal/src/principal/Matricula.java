@@ -10,7 +10,7 @@ import java.util.Iterator;
 
 public class Matricula {
 
-    private static final float costCredits = 15;
+    private static final float COSTCREDITS = 15;
     private long id = 0;
     private int curs = 0;
     private Collection assignatures;
@@ -29,6 +29,7 @@ public class Matricula {
      */
     public Matricula(long id, Estudiant estudiant, int curs, Collection assignatures) {
         this.id = id;
+        this.estudiant=estudiant;
         this.curs = curs;
         this.assignatures = assignatures;
     }
@@ -68,7 +69,7 @@ public class Matricula {
             credits = credits + element.getCredits();
         }
 
-        cost = credits * costCredits;
+        cost = credits * COSTCREDITS;
         return cost;
     }
 }
