@@ -10,8 +10,8 @@ import java.util.Iterator;
 
 public class Matricula {
 
-    public static final float costCredits = 15;
-    public long id = 0;
+    private static final float costCredits = 15;
+    private long id = 0;
     private int curs = 0;
     private Collection assignatures;
     private Estudiant estudiant;
